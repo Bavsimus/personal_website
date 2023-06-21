@@ -1,0 +1,237 @@
+body, html {
+    background-color: #212121;
+    height: 100%;
+    max-height: 100%;
+    scrollbar-width: none; /* firefox sb*/
+    -ms-overflow-style: none; /*edge sb*/
+}
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+  .header-text {
+    font-weight: lighter;
+    font-family: Bahnschrift, sans-serif;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    display: block;
+    margin-top: 140px;
+    margin-bottom: -140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* back */
+
+  .circle {
+    z-index: 1;
+    opacity: 5%;
+    filter: blur(8px);
+    width: 2000px;
+    height: 2000px;
+    background: radial-gradient(#b0e633, #53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in-out infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -1325px;
+    left: -1025px;
+  }
+
+  .circle:nth-child(2) {
+    top: -1525px;
+    left: -1005px;
+  }
+
+  .circle:nth-child(3) {
+    top: -1725px;
+    left: -1005px;
+  }
+  
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(30px);
+    }
+  }
+
+  /* card */
+  .img1 {
+    display: block;
+    max-width: 150px; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .arrow {
+    color: #53ef7d;
+    display: block;
+    max-width: 25px; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-text {
+    font-family: Bahnschrift, sans-serif;
+    font-size: larger;
+    color: #53ef7d;
+    text-align: center;
+  }
+
+  .c-card-align {
+    display: flex;
+    flex-direction: row;     
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+  }
+
+  .c-card {
+    z-index: 2;
+    margin: auto;
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #b0e633 0%, #53ef7d 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .c-card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    transition: all .2s;
+   }
+   
+   .c-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .c-card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+   .card-text:hover {
+    font-size: x-large;
+    color: #b0e633;
+    text-align: center;
+  }
+
+
+/* card big */
+.img-big {
+  display: block;
+  max-width: 280px; 
+  margin-top: 2px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-top: 4px;
+}
+
+.card-big-text {
+  font-family: Bahnschrift, sans-serif;
+  font-size: large;
+  color: black;
+  text-align: center;
+  z-index: 3;
+  margin-left: 330px;
+  margin-top: -205px;
+  height: 25%;
+  width: 80%;
+}
+
+.c-card-big-align {
+  display: flex;
+  flex-direction: row;     
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+}
+
+.c-card-big {
+  z-index: 2;
+  margin: auto;
+  width: 590px;
+  height: 354px;
+  background-image: linear-gradient(163deg, #b0e633 0%, #53ef7d 100%);
+  border-radius: 20px;
+  transition: all .3s;
+  opacity: 90%;
+  animation: glow 1s ease-in-out infinite alternate-reverse;
+ }
+
+ @keyframes glow {
+  to {
+    opacity: 100%;
+    background-color: #212121;
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  }
+ }
+ 
+ .card-big-text2 {
+  font-family: Bahnschrift, sans-serif;
+  font-size: large;
+  color: black;
+  text-align: center;
+  z-index: 3;
+  margin-left: -275px;
+  margin-top: -160px;
+  height: 25%;
+  width: 80%;
+}
+
+ .c-card2-big {
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 290px;
+  height: 350px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  transition: all .2s;
+ }
+ 
+ .c-card2-big:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+
+ .c-card2-big-info {
+  margin-top: 2px;
+  margin-left: 296px;
+  width: 290px;
+  height: 350px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  transition: all .2s;
+ }
+ 
+ .c-card2-big-info:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .c-card-big:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  opacity: 100%;
+ }
+
+
+
+   
